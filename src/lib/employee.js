@@ -18,7 +18,7 @@ export class employee {
 
     // This function tests if the data typed by the user are valid
 
-    isValid = async () => {
+    async isValid () {
         if (this.FirstName.match(/^([a-zA-Z\s\s+]){3,}$/) === null) throw new Error('invalid firstName')
         else if (this.LastName.match(/^([a-zA-Z\s\s+]){3,}$/) === null) throw new Error('invalid lastName')
         else if (this.Street.match(/^([a-zA-Z\s\s+]){3,}$/) === null) throw new Error('invalid street')
