@@ -1,0 +1,29 @@
+.EmployeesList h1 {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    padding-bottom: 35px;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.tableContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 35px;
+    margin: 18px 5px;
+    box-shadow: 0 0 30px 8px #5a6f083b;
+    border-radius: 12px;
+    position: relative;
+}
+
+.tableContainer .newEmployee {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: black;
+    padding: 8px 16px;
+    background-color: grey;
+    border-radius: 10px 0px 0px;
+}

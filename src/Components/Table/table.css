@@ -1,0 +1,121 @@
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background: white;
+    box-shadow: 0px 3px 15px -8px #000000;
+    margin: 20px 0px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 13px 8px;
+    text-align: center;
+    border: none;
+    box-shadow: 0 0 10px -9px black;
+}
+
+table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table th {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-align: center;
+    background-color: #447b7d;
+    color: white;
+    box-shadow: 0 0 10px -7px black;
+}
+
+.SearchInput {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 12px 15px;
+    font-size: 18px;
+    box-shadow: inset 0 0 25px -24px #0000009e;
+    border-radius: 10px;
+    margin-right: 25px;
+}
+
+
+input.SearchInput:focus-visible {
+    outline: none;
+}
+
+.tableHeader {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+.tableHeader select {
+    padding: 0px 11px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 25px -24px #0000009e;
+    border: none;
+    font-size: 14px;
+}
+
+.tableFooter {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+
+.tableFooter .targetPage {
+    box-shadow: inset 0 0 11px 0px #447b7da8;
+    border: none;
+    border-radius: 8px;
+    margin-left: 10px;
+    position: relative;
+    top: 2.2px;
+}
+
+.tableFooter span {
+    display: flex;
+    align-items: center;
+    width: calc(100% / 3);
+}
+
+.actualPage {
+    justify-content: center;
+}
+
+.tableFooter div {
+    width: calc(100% / 3);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.tableFooter button {
+    width: 40px;
+    height: 40px;
+    margin-left: 8px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 0 10px -5px #000000de;
+}
+
+.tableFooter div :nth-child(3) {
+    margin-left: 18px;
+} 
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+	margin:0;
+}
