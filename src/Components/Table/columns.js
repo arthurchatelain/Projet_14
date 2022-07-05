@@ -3,40 +3,40 @@ import { format } from "date-fns"
 export const COLUMNS = [
     {
         Header: 'First Name',
-        accessor: 'FirstName'
+        accessor: 'firstName'
     },
     {
         Header: 'Last Name',
-        accessor: 'LastName'
+        accessor: 'lastName'
     },
     {
         Header: 'Start Date',
-        accessor: 'StartDate',
+        accessor: 'startDate',
         Cell: ({value}) => { return format(new Date(value), 'dd/MM/yyyy')}
     },
     {
         Header: 'Department',
-        accessor: 'Department'
+        accessor: 'department'
     },
     {
         Header: 'Date of Birth',
-        accessor: 'BirthDate',
+        accessor: 'birthDate',
         Cell: ({value}) => { return format(new Date(value), 'dd/MM/yyyy')}
     },
     {
         Header: 'Street',
-        accessor: 'Street'
+        accessor: 'street'
     },
     {
         Header: 'City',
-        accessor: 'City'
+        accessor: 'city'
     },
     {
         Header: 'State',
-        accessor: 'State'
+        accessor: 'state'
     },
     {
         Header: 'Zip Code',
-        accessor: 'ZipCode'
+        accessor: 'zipCode'
     }
 ]

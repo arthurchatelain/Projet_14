@@ -1,4 +1,4 @@
-export const States = [
+export const states = [
 	"Alabama",
 	"Alaska",
 	"Arizona",
@@ -104,4 +104,4 @@ export const formatStates = [
 	{stateName : "Wyoming", twoDigits: "WY" }
 ]
 
-export const department = ['Sales', 'Marketing', 'Engineering', 'Human Ressources', 'Legal' ]
+export const departmentList = ['Sales', 'Marketing', 'Engineering', 'Human Ressources', 'Legal' ]
