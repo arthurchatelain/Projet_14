@@ -45,7 +45,7 @@ export default function NewEmployee () {
 
     // When the user submit the form, if it is valid, it creates a new employee
     const submitFormNewUser = () => {
-        isValid(firstName, lastName, street, city, state, zipCode, department)
+        isValid(firstName.trim(), lastName.trim(), street.trim(), city.trim(), state, zipCode, department)
             .then(() => {
                 birthDate = birthDate.toISOString().split('.')[0]+"Z"
                 startDate = startDate.toISOString().split('.')[0]+"Z"
@@ -64,8 +64,8 @@ export default function NewEmployee () {
                 <Link className='linkEmployeesList' to='/employees_list'>View employees list</Link>
                 <div className='formContainer'>
                     <div className='nameContainer'>
-                        <input className='inputContainer' onChange={e => setFirstName(e.target.value.trim())} name='firstName' id='firstName' placeholder='First Name'></input>
-                        <input className='inputContainer' onChange={e => setLastName(e.target.value.trim())} name='lastName' id='lastName' placeholder='Last Name'></input>
+                        <input className='inputContainer' onChange={e => setFirstName(e.target.value)} name='firstName' id='firstName' placeholder='First Name'></input>
+                        <input className='inputContainer' onChange={e => setLastName(e.target.value)} name='lastName' id='lastName' placeholder='Last Name'></input>
                     </div> 
                     <div className='datesContainer'>
                         <PickerDate label='Date of birth' title='birthDate' value={birthDate} onChange={ e => setBirthDate(e)}/>
@@ -74,8 +74,8 @@ export default function NewEmployee () {
                     <div className='adress'>
                         <h2>Adress</h2>
                         <div className='placeContainer'>
-                            <input className='inputContainer' onChange={e => setStreet(e.target.value.trim())} name='street' id='street' placeholder='Street' />
-                            <input className='inputContainer' onChange={e => setCity(e.target.value.trim())} name='city' id='city' placeholder='City' />
+                            <input className='inputContainer' onChange={e => setStreet(e.target.value)} name='street' id='street' placeholder='Street' />
+                            <input className='inputContainer' onChange={e => setCity(e.target.value)} name='city' id='city' placeholder='City' />
                         </div>
                         <div className='placeContainer'>
                             <div className='inputContainerSelect'><Select data={states} title='State' onChange={e => setState(e)}/></div>
